@@ -18,14 +18,12 @@ Author: EXSYthemes
 			/* 1. BODY */
 /***********************************/
 
-.boxscroll {
-    overflow-y: auto !important;
-}
+
 
 * {
   margin: 0;
   padding: 0;
-  -webkit-text-size-adjust: none;
+
 }
 
 
@@ -34,6 +32,8 @@ body {
   margin: 0;
   font-size: 14px;
   line-height: 1;
+  background: transparent;
+  
 
 }
 
@@ -356,7 +356,8 @@ button {
 }
 /* 2.2. END Social style */
 #space{
-  width:100%
+  width:110%
+   
 }
 
 #warp{
