@@ -28,7 +28,76 @@
 </head>
 
 
-<script>
+<script language="JavaScript">
+    function protegercodigo() {
+    if (event.button==2||event.button==3){
+        alert('HA, Boa sorte!');}
+    }
+    document.onmousedown=protegercodigo
+        $(window).scroll(function() {
+            var scrollTop = $(this).scrollTop();
+
+            $('.header-overlay').css({
+                opacity: function() {
+                    var elementHeight = $(this).height(),
+                        opacity = ((elementHeight - scrollTop) / elementHeight);
+                    return opacity;
+                }
+            });
+        });
+
+
+
+        if (document.addEventListener) {
+    document.addEventListener("keydown", bloquearSource);
+} else { //Versões antigas do IE
+    document.attachEvent("onkeydown", bloquearSource);
+}
+
+function bloquearSource(e) {
+    e = e || window.event;
+
+    var code = e.which || e.keyCode;
+
+    if (
+        e.ctrlKey &&
+        (code == 83 || code == 85 ||code == 67 ) //83 = S, 85 = U,67 - c
+    ) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        } else {
+            e.returnValue = false;
+        }
+
+        return false;
+    }
+    if (
+        e.ctrlKey &&e.shiftKey &&
+        (code == 67  ) //83 = c
+    ) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        } else {
+            e.returnValue = false;
+        }
+
+        return false;
+    }
+    if (
+        
+        (code == 123) //83 = S, 85 = U
+    ) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        } else {
+            e.returnValue = false;
+        }
+
+        return false;
+    }
+}
+
+/////////////////////// bloqueio pika
 
    var cont = 0;
 
