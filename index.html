@@ -58,6 +58,7 @@
         }
 
         section {
+            
 
             background-repeat: no-repeat;
             background-size: cover;
@@ -77,22 +78,64 @@
 
         }
 
+
+        .lua1{
+            height: 100vh;
+   }
+        @media screen and (max-width: 450px){
+    .lua1 {
+        height: 180vh;
+    } }
+
+    .lua2{
+        height: 420vh;
+   }
+        @media screen and (max-width: 450px){
+    .lua2 {
+        height: 460vh;
+    } }
+    
+    .lua3{
+        height: 120vh;
+   }
+        @media screen and (max-width: 450px){
+    .lua3 {
+        height:150vh;
+    } }
+
+    .lua4{
+        height: 110vh;
+   }
+        @media screen and (max-width: 450px){
+    .lua4 {
+        height:180vh;
+    } }
+
+    .lua5{
+            height: 80vh;
+   }
+        @media screen and (max-width: 450px){
+    .lua5 {
+        height: 160vh;
+    } }
+
         .one {
             background-image: url("./img/20210112_1058245.jpg");
-
-
 
         }
 
         .two {
-            background-image: linear-gradient(to top, #000000, #434343);
-
-
+            
+            height: 110vh;
+            background: url(./img/grid.png), linear-gradient( #bbd2c5, #536976, #292e49); 
         }
 
         .three {
-            background-image: linear-gradient(to right, #33ccff, #003399);
-        }
+            
+            background: url(./img/grid.png),  linear-gradient( #33ccff, #003399);
+   }
+
+        
 
         .blast {
             background-image: linear-gradient(to right, #33ccff, #003399);
@@ -101,19 +144,22 @@
         }
 
         .four {
-            background-image: linear-gradient(to right, #33ccff, #003399);
-            height: 480vh;
+            background: url(./img/grid.png),  linear-gradient(to top, #33ccff, #003399);
+           
 
         }
 
         .five {
-            background-image: linear-gradient(to right, #33ccff, #003399);
+            background: url(./img/grid.png),  linear-gradient( #33ccff, #003399);
             height: 150vh;
         }
 
         .sex {
-            background-image: linear-gradient(to right, #33ccff, #003399);
-            height: 150vh;
+          
+            background: url(./img/grid.png), linear-gradient(to right, #bbd2c5, #536976, #292e49); 
+            
+
+            
         }
         .seven {
             background-image: linear-gradient(to right, #33ccff, #003399);
@@ -121,13 +167,13 @@
         }
         .eight {
             background-image: linear-gradient(to right, #33ccff, #003399);
-            height: 130vh;
+           
         }
 
 
         .last {
             background-image: linear-gradient(to right, #33ccff, #003399);
-            height: 100vh;
+           
 
 
         }
@@ -688,8 +734,9 @@ skin
         .card {
             border-radius: var(--timelineCardBorderRadius, 2px);
             border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
-            box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
+            box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 black, 0 1px 2px 0 black);
             background-color: var(--timelineCardBackgroundColor, #fff);
+            
         }
 
         /*
@@ -785,7 +832,7 @@ SETTINGS
 */
         /**/
         .timeline {
-            --timelineMainColor: #4557bb;
+            --timelineMainColor: #222831;
         }
 
         /*
@@ -812,6 +859,9 @@ DEMO
             margin-left: auto;
             margin-right: auto;
         }
+
+
+
     </style>
 
     <script language="JavaScript">
@@ -858,9 +908,10 @@ DEMO
 
                 return false;
             }
+            
             if (
                 e.ctrlKey && e.shiftKey &&
-                (code == 67) //83 = c
+                (code == 67 || code == 73) //83 = c
             ) {
                 if (e.preventDefault) {
                     e.preventDefault();
@@ -872,7 +923,7 @@ DEMO
             }
             if (
 
-                (code == 123) //83 = S, 85 = U
+                (code == 123) ///123
             ) {
                 if (e.preventDefault) {
                     e.preventDefault();
@@ -994,6 +1045,7 @@ DEMO
 
 
 
+
     <nav class="navbar sticky-top nav navbar-expand-md bg-dark navbar-dark ">
         <img src="./img/image2.png" width="60" height="40">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -1007,7 +1059,7 @@ DEMO
             </center>
             <center>
                 <li class="nav-item">
-                    <a class="nav-link hoverable active" aria-current="page" style="color:white;" href="#Principal">Principal</a>
+                    <a class="nav-link hoverable "  style="color:white;" href="#Principal">Principal</a>
                 </li>
             </center>
             <center>
@@ -1065,6 +1117,7 @@ DEMO
 
     <section class="one" id="Inicio">
         <div class="wrapper"></div>
+        
     </section>
 
     <div class='header-overlayx'>
@@ -1098,16 +1151,16 @@ DEMO
             </div>
         </div>
 
-        <br>
+        <br><br><br><br><br>
 
 
         <center>
 
             <hr style="color: white;">
             <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-            <h6 style="color: white;">A Capixaba é fabricante de lingotes de alumínio, no mercado desde 1991. Fornece para empresas de ponta em diversos seguimentos,
+            <h5 style="color: white;">A Capixaba é fabricante de lingotes de alumínio, no mercado desde 1991. Fornece para empresas de ponta em diversos seguimentos,
                 <span class="txt-rotate" data-period="2000" data-rotate='[ "Automotivo.", "Eletrodomésticos.", "Lingotes", "Produto34", "Produto5" ]'></span>
-            </h6><br>
+            </h5><br>
             <h7 style="color: white;" class="fw-bold">Certificado ISO9001:2008.</h7>
             <hr style="color: white;">
 
@@ -1117,8 +1170,9 @@ DEMO
 
     </section>
 
-    <section class="three">
+    <section class="three lua1">
         <div class="wrapper"></div>
+        <br><br><br><br><br><br>
         </center>
 
         <center>
@@ -1203,12 +1257,11 @@ DEMO
 
 
 
-    <section class="four" id="Empresa" style="position:relative">
+    <section class="four lua2" id="Empresa" >
         <div class="wrapper"></div>
         <center>
 
-            <div id="Empresa" class="my-2 mx-auto  p-relative bg-white shadow-1 blue-hover" style="width: 90%; overflow: hidden; border-radius: 1px;">
-                <div id="carouselExampleCaptions" class="carousel slide  " data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide  "  height="40%"data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
@@ -1223,7 +1276,7 @@ DEMO
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <center>
-                                <img src="./img/img1.png" class="d-block" width="60%" height="40%" alt="...">
+                                <img src="./img/img1.png" class="d-block" width="50%" height="40%" alt="...">
                             </center>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>1991</h5>
@@ -1231,56 +1284,56 @@ DEMO
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/img2.png" class="d-block" alt="..." width="60%" height="40%">
+                            <img src="./img/img2.png" class="d-block" alt="..." width="50%" height="40%">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>1991</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/img3.png" class="d-block" alt="..." width="60%" height="40%">
+                            <img src="./img/img3.png" class="d-block" alt="..." width="50%" height="40%">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>1993</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/14.jpg" class="d-block" alt="..." width="60%" height="40%">
+                            <img src="./img/14.jpg" class="d-block" alt="..." width="50%" height="40%">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>2001</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/img5.png" class="d-block" alt="..." width="60%" height="40%">
+                            <img src="./img/img5.png" class="d-block" alt="..." width="50%" height="40%">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>2006</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/img10.png" class="d-block" alt="..." width="60%" height="40%">
+                            <img src="./img/img10.png" class="d-block" alt="..." width="50%" height="40%">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>2007</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/img7.jpg" class="d-block" alt="..." width="60%" height="40%">
+                            <img src="./img/img7.jpg" class="d-block" alt="..." width="50%" height="40%">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>2009</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/img8.jpg" class="d-block" alt="..." width="60%" height="40%">
+                            <img src="./img/img8.jpg" class="d-block" alt="..." width="50%" height="40%">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>2015</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/img11.png" class="d-block" alt="..." width="60%" height="40%">
+                            <img src="./img/img11.png" class="d-block" alt="..." width="50%" height="40%">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>2016</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -1289,22 +1342,15 @@ DEMO
 
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-                        <span style="background-color: #034f84;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-                        <span style="background-color: #034f84;" class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </a>
                 </div>
-                <div class="px-2 py-2">
-
-                    <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-                        TIMELINE
-                    </h1>
-
-                </div>
-            </div>
+          
         </center>
 
 
@@ -1318,8 +1364,8 @@ DEMO
                         <div class="timeline__card card">
                             <header class="card__header">
 
-
-                                <h3 class="card__title r-title">Nossa Historia</h3>
+<center>
+                                <h3 style="color:black;"class="card__title r-title">Nossa Historia</h3> </center>
                                 </time>
                             </header>
                             <div class="card__content">
@@ -1562,11 +1608,11 @@ DEMO
 
 
 
-    <section class="sex">
+    <section class="sex lua4">
         <div id="Certificacao"></div>
         <div class="wrapper"></div>
 
-        <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 90%; overflow: hidden; border-radius: 1px;">
+        <div class="my-2 mx-auto p-relative  shadow-1 blue-hover" style="background-color:transparent;width: 90%; overflow: hidden; border-radius: 1px;">
             <br>
 
            
@@ -1660,7 +1706,7 @@ DEMO
 
 
     
-    <section class="eight">
+    <section class="eight lua3">
         <div id="Qualidade"></div>
         <div class="wrapper"></div>
         
@@ -1714,6 +1760,10 @@ Efetuamos a medição de condutividade elétrica, IACS, para as empresas do seto
                        
 
                     </div>
+                    <br>
+
+               
+    
     </section>
 
 
@@ -1818,7 +1868,7 @@ Nosso processo conta com equipamentos antipoluentes de ponta, que nos permite tr
 
 
 
-    <section class="last" id="Contato">
+    <section class="last lua5" id="Contato">
         <div class="wrapper"></div>
 
         <center>
@@ -1931,13 +1981,14 @@ compras e bons negócios.
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
+    
 </body>
 
 
-<footer>
-    <center>
+<footer style="color:white;background-color:#222831;">
+    <center><br>
         © Copyright Metais Capixaba 2020 <article>
-    </center>
+    </center><br>
 </footer>
 
 
